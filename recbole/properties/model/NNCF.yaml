@@ -1,4 +1,4 @@
-ui_embedding_size: 64           # (int) The embedding size of user and item.
+ui_embedding_size: 512           # (int) The embedding size of user and item.
 neigh_embedding_size: 32        # (int) The embedding size of neighborhood information.
 num_conv_kernel: 128            # (int) The number of kernels in convolution layer.
 conv_kernel_size: 5             # (int) The size of kernel in convolution layer.
