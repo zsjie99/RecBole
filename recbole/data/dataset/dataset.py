@@ -456,6 +456,7 @@ class Dataset(torch.utils.data.Dataset):
         usecols = []
         dtype = {}
         encoding = self.config["encoding"]
+        print(filepath)
         with open(filepath, "r", encoding=encoding) as f:
             head = f.readline()[:-1]
         for field_type in head.split(field_separator):

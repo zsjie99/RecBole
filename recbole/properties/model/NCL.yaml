@@ -11,6 +11,7 @@ alpha: 1.0                      # (float) The weight to balance self-supervised 
 
 # Contrastive Learning with Semantic Neighbors
 proto_reg: 8e-8                 # (float) The prototype-contrastive weight.
-num_clusters: 1000              # (int) Number of prototypes.
+# num_clusters: 1000              # (int) Number of prototypes.
+num_clusters: 100              # (int) Number of prototypes.
 m_step: 1                       # (int) Number of M-steps for each E-step.
 warm_up_step: 20                # (int) Number of warm up steps.

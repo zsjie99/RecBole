@@ -17,7 +17,11 @@ import os
 import sys
 import yaml
 from logging import getLogger
-from typing import Literal
+# from typing import Literal
+try:
+    from typing import Literal
+except ImportError:
+    from typing_extensions import Literal
 
 from recbole.evaluator import metric_types, smaller_metrics
 from recbole.utils import (

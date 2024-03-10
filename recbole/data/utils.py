@@ -17,7 +17,11 @@ import importlib
 import os
 import pickle
 import warnings
-from typing import Literal
+# from typing import Literal
+try:
+    from typing import Literal
+except ImportError:
+    from typing_extensions import Literal
 
 from recbole.data.dataloader import *
 from recbole.sampler import KGSampler, Sampler, RepeatableSampler

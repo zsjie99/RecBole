@@ -84,7 +84,7 @@ class NCL(GeneralRecommender):
     def run_kmeans(self, x):
         """Run K-means algorithm to get k clusters of the input tensor x"""
         import faiss
-
+        
         kmeans = faiss.Kmeans(d=self.latent_dim, k=self.k, gpu=True)
         kmeans.train(x)
         cluster_cents = kmeans.centroids
